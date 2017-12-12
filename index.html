@@ -1,0 +1,79 @@
+<!-- Code modifications from:
+line: https://bl.ocks.org/mbostock/3884955#data.tsv
+area stacked: https://bl.ocks.org/mbostock/3885211
+scatter: https://bl.ocks.org/mbostock/3887118
+  -->
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<script type="text/javascript" src="./d3/jquery-1.4.4.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/line.css" />
+<script src="./d3/d3.min.js"></script>
+<script src="./d3/d3.csv.js"></script>
+
+
+<body>
+<div id="header">
+  <h1>Ease of Doing Business in 2017</h1>
+  <p>The <a href="http://www.doingbusiness.org/">World Bank</a> measures business regulations for local firm in 190 economies around the world. It measures what regulations enhances business activity and what contraints it. 
+  </p>
+  <p>Doing Business presents quantitative indicators on business regulations and the protection of property rights that can be compared across 190 economies—from Afghanistan to Zimbabwe—and over time.
+  </p> 
+
+</div><!-- @end header -->
+
+<div id="scatterchart"></div>
+<p id = "linepara"> We now look into each country and break down each measure into its respective sub measures. </p>
+
+<div class = "container">
+
+<div id="explain" class="left">
+    <h3>India</h3>
+    <p>India's performance has been steadily increaing, especially when it comes to investors. However, she is still lagging behind in enforcing contracts and resolving insolvency. There has been a steady improvement in Starting a Business.
+    </p>
+  </div><!-- @end explain -->
+
+ <!-- Line Chart for Each Country -->
+  <div id="filters">
+    <table class="left">
+      <tr>
+        <td><a onclick="linemeasure.transition(0)" id="India" class="current">India</a></td>
+      </tr>
+      <tr>
+        <td><a onclick="linemeasure.transition(1)" id="South Africa">South Africa</a></td>
+      </tr>
+      <tr>
+        <td><a onclick="linemeasure.transition(2)" id="Rwanda">Rwanda</a></td>
+      </tr>
+      <tr>
+        <td><a onclick="linemeasure.transition(3)" id="United States">United States</a></td>
+      </tr>
+    </table>
+    <div class="clr"></div>
+  </div><!-- @end filters -->
+
+  <div class="clr"></div>
+  <div id="vis"></div>
+  </div> <!--@end container -->
+
+<script type="text/javascript" src = "scatterline.js" ></script>
+<script type="text/javascript" src = "dulledscatterline.js" ></script>
+<script type="text/javascript" src="line_measure.js"></script>
+
+<div id="footer">
+  <h6 >Data Sources:</h6>
+  <p >Data from World Bank</p>
+  <h6>Code Sources:</h6>
+  <p>mikebostok, flowingdata</p>
+  <h6>Idea Inspiration:</h6>
+  <p>New York Times</p>
+</div>
+</body>
+
+</html>
+</script>
+</body>
+</html>

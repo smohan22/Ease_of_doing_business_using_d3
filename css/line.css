@@ -1,0 +1,176 @@
+/* Main div */
+
+body {
+	font: 12px Helvectica, Arial, sans-serif;
+  background-color:     #fafafa;
+}
+
+#header { 
+    border-bottom: 1px solid #ccc;
+    margin: 0 26px 20px 16px; 
+}
+#header h1 { 
+  font-size: 2.4em; 
+  text-align: center;
+  font-family: Georgia, Palatino, serif;
+  font-weight: normal;
+}
+#header p {
+    font-family: Georgia, Palatino, serif;
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+
+#footer { 
+    width: 908px; 
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+    font-family: Georgia;
+}
+
+#linepara {
+  font-family: Georgia, Palatino, serif;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  border-bottom: 1px solid #ccc;
+  margin: 0 26px 20px 16px;
+}
+
+/* Scatter Line Chart */
+
+#scatterchart { 
+  background: #fafafa;
+  margin:0px; padding:0px;
+}
+  
+.tooltipLine {
+  fill: none;
+  stroke-width: 5px;
+}
+
+
+.introText {
+  font-family: Palatino, serif;
+  font: 1.1em;
+
+}
+
+.tooltipText {
+  font-family: Palatino, serif;
+  font-style: italic;
+  text-align: center;
+  color: #566573;
+  
+}
+
+.scatterLineLabel { 
+  font-size: 1.2em;
+  font-family: Palatino, serif;
+  font-style: italic;
+  text-align: center;
+  color: #566573;
+  margin: 20px 26px 20px 16px;
+}
+
+/* Line Chart on 4 countries */
+
+#container { 
+  width: 1111px;
+  margin: 0 auto; 
+  background: #fff;
+}
+
+
+#explain {
+    margin: 0 0 0 16px;
+    width: 550px;
+    height: 75px;
+}
+#explain h3 {
+    font-size: 1.5em;
+    margin: 0 0 0.5em 0; 
+    padding: 0;
+}
+#explain p { 
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #717171;
+    margin-top: 0;
+}
+
+#filters { 
+    margin: 0 24px 10px 16px; float: right; 
+}
+#filters table { 
+	width: 85px; 
+	border-collapse: collapse;
+	border-top: 1px solid #ccc;
+	margin-right: 2px;
+}
+#filters table td { padding: 0; margin: 0; }
+
+#filters a {
+	display: block;
+	width: 93px;
+	padding: 2px 4px;
+	font-size: 1.1em;
+	color: #919292;
+	background: #ECF0F1;
+	cursor: pointer;
+	border-left: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	overflow: hidden;
+}
+#filters a:hover {
+	text-decoration: underline;
+}
+#filters a.current {
+	background: #ECF0F1;
+	color: #000;
+	font-weight: bold;
+}
+#filters a.current:hover { text-decoration: none; }
+
+#vis { background: #ECF0F1; min-height: 530px;}
+
+.aheader { 
+	font-size: 1.1em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+.ticklabel { font-size: 0.85em; fill: #888; }
+
+.chart { 
+    float: left; 
+    padding: 16px; 
+    border-left: 1px dotted #e2e2e2; 
+    border-top: 1px dotted #e2e2e2;
+}
+.chart.noborder { 
+  border-left: none; 
+  padding-left: 0; 
+  margin-left: 16px; 
+}
+.chart.endrow { border-right: 1px dotted #e2e2e2; 
+  margin-right: 16px; 
+}
+
+.rule line {
+  stroke: #eee;
+  shape-rendering: crispEdges;
+}
+
+.rule line.axis {
+  stroke: #000;
+}
+
+.line {
+  fill: none;
+  stroke: #1b85b8;
+  stroke-width: 1.5px;
+}
+
+.left { float: left; }
+
